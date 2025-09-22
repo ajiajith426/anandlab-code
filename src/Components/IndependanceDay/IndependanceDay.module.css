@@ -1,0 +1,655 @@
+.page-banner-section {
+    background: linear-gradient(90.92deg, #FFF3E5 0.51%, #D4B2FB 99.49%);
+}
+
+.banner-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 3rem;
+}
+
+.banner-text h3 {
+    font-family: 'Maven Pro';
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: left;
+    color: rgba(255, 139, 0, 1);
+    margin-bottom: 0;
+}
+
+.banner-text h3 span {
+    color: #5C2D91;
+}
+
+.page-content {
+    font-family: 'Maven Pro';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.85px;
+    text-align: left;
+    color: #4C4B4B;
+    margin: 1rem 0 1.5rem;
+}
+
+.banner-links {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.banner-links a {
+    width: 50%;
+    font-size: 18px;
+}
+
+.banner-links a:hover {
+    color: #fff;
+}
+
+.banner-links .sent_enquiry {
+    width: auto;
+    margin-top: 0;
+    padding: 1rem 2rem;
+}
+
+.get_touch {
+    background: linear-gradient(92.91deg, rgba(92, 45, 145, 0.9) 0.84%, rgba(169, 101, 214, 0.9) 97.64%);
+    color: #fff;
+    border-radius: 8px;
+    font-family: 'Maven Pro';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 45px;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    width: auto !important;
+    margin-right: 1rem;
+}
+
+.purple-text {
+    color: #60308D !important;
+}
+
+.grey-text {
+    color: #808080 !important;
+}
+
+.yellow-text {
+    color: #F7941D !important;
+}
+
+
+.purple-bg {
+    background-color: #5C2D91;
+}
+
+.yellow-bg {
+    background-color: #F79321;
+}
+
+.book-now-btn.price-btn {
+    padding: 1.3rem 2rem;
+    background: linear-gradient(90deg, #5C2C8F 0%, #9757C5 100%);
+}
+
+.price-btn {
+    border-radius: 9.13px;
+    /* padding: 10px 25px; */
+    text-align: center;
+    padding: 8px 40px;
+    width: fit-content;
+    display: block;
+}
+
+.price-btn label {
+    font-family: 'Maven Pro';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19.75px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+.price-btn span {
+    font-family: 'Maven Pro';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 38.16px;
+    text-align: left;
+    color: #fff;
+}
+
+.how_it_work_heading,
+.section-heading {
+    font-family: 'Maven Pro';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 58.28px;
+    text-align: center;
+    margin-top: 4rem;
+    color: #5C2D91;
+    text-transform: uppercase;
+}
+
+.how_it_work_heading span,
+.section-heading span {
+    color: #FF8B00;
+}
+
+.form_section {
+    background-image: url('../../assets/images/independence-day/independence-banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+}
+
+.form_module {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    box-shadow: 0px 4px 10.8px 0px #00000040;
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.radio-inputs-container p {
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.sent_enquiry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Orange-Gradient, linear-gradient(91deg, #f7941d 58.96%, rgba(255, 173, 75, 0.86) 98.25%));
+}
+
+.desktop_sent_enquiry {
+    display: block;
+}
+
+.mobile_sent_enquiry,
+.mobile {
+    display: none;
+}
+
+button:disabled,
+button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+
+.form_module label {
+    font-family: 'Maven Pro';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.5px;
+    text-align: left;
+    color: #4C4B4B;
+    margin-bottom: 1.5rem;
+}
+
+.form_module input,
+.form_module input::placeholder {
+    font-family: 'Maven Pro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.15px;
+    text-align: left;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    color: #82817F;
+}
+
+.form_module input::placeholder {
+    padding: 0;
+}
+
+.pkg_section {
+    margin-top: 5rem;
+}
+
+.light-pink-bg {
+    background: #FFF7ED;
+}
+
+.light-blue-bg {
+    background: #ECF5FF;
+}
+
+.test-list {
+    background: linear-gradient(181.16deg, #DE800E 0.99%, #EFA246 99.01%);
+    width: 70%;
+    border-radius: 50px 50px 0 0;
+    padding: 2rem 5rem;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.test-list.yellow-bg {
+    background: linear-gradient(181.16deg, #DE800E 0.99%, #EFA246 99.01%);
+}
+
+.test-list.purple-bg {
+    background: linear-gradient(181.16deg, #37195A 0.99%, #572B8A 99.01%);
+}
+
+.test-list ul {
+    columns: 2;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.test-list li {
+    font-family: 'Maven Pro';
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28.2px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 30px;
+    position: relative;
+    margin: 5px;
+}
+
+.test-list li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 5px;
+    background-image: url('../../assets/images/mens-health/white-check-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.left-icon-img,
+.right-icon-img {
+    position: absolute;
+}
+
+.capt-health-module .left-icon-img {
+    left: -6%;
+    top: 10%;
+    width: 100px;
+}
+
+.capt-health-module .right-icon-img {
+    right: -15%;
+    bottom: 0;
+    width: 180px;
+}
+
+.basic-module .left-icon-img {
+    left: -3%;
+    top: 10%;
+    width: 50px;
+}
+
+.basic-module .right-icon-img {
+    right: -15%;
+    bottom: 0;
+    width: 140px;
+}
+
+.general-module .left-icon-img,
+.express-module .left-icon-img {
+    left: -5%;
+    top: -3%;
+    width: 50px;
+}
+
+.general-module .right-icon-img {
+    right: -5%;
+    top: -47%;
+    width: 70px;
+    opacity: 0.5;
+}
+
+.express-module .right-icon-img {
+    display: none;
+}
+
+.express-module .left-icon-img {
+    left: unset;
+    right: -7%;
+    top: -17%;
+    width: 50px;
+}
+
+.gym-pkg-section::before,
+.gym-pkg-section::after {
+    content: '';
+    background-image: url('../../assets/images/independence-day/India.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.gym-pkg-section::after {
+    background-image: url('../../assets/images/independence-day/Bindia.png');
+    top: unset;
+    left: unset;
+    bottom: 10%;
+    right: 5%;
+}
+
+.plus-pkg-section::before,
+.plus-pkg-section::after {
+    content: '';
+    background-image: url('../../assets/images/independence-day/Bindia.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.plus-pkg-section::after {
+    background-image: url('../../assets/images/independence-day/India.png');
+    top: unset;
+    left: unset;
+    bottom: 10%;
+    right: 8%;
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 301px) and (max-width: 600px) {
+
+    .plus-pkg-section::before,
+    .plus-pkg-section::after,
+    .gym-pkg-section::before,
+    .gym-pkg-section::after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .price-btn span {
+        font-size: 25px;
+    }
+
+    .page-banner-section {
+        padding: 1.5rem;
+        background-size: cover;
+    }
+
+    .banner-text {
+        padding-left: 1rem;
+    }
+
+    .banner-text h3 {
+        font-size: 25px;
+        line-height: normal;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .banner-links {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .banner-links a {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        width: 100% !important;
+    }
+
+    .get_touch {
+        margin: 1rem 0;
+    }
+
+    .page-banner-section img {
+        padding-top: 2rem;
+    }
+
+    .page-heading {
+        font-size: 22px;
+        line-height: 1.5;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .price-btn {
+        padding: 10px 20px !important;
+        text-align: center;
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .price-btn.book-now-btn span,
+    .price-btn span,
+    .price-btn label {
+        font-size: 20px;
+    }
+
+    .general-module .right-icon-img,
+    .express-module .right-icon-img {
+        right: -10%;
+        top: 0;
+        width: 40px;
+    }
+
+    .test-list {
+        padding: 2rem 1.5rem;
+        width: 80%;
+    }
+
+    .test-list ul {
+        columns: 1;
+    }
+
+    .test-list li {
+        font-size: 12px;
+    }
+
+    .section-heading,
+    .how_it_work_heading {
+        line-height: 1.5;
+        font-size: 20px;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+
+    .capt-health-module .left-icon-img {
+        left: -5%;
+        top: -5%;
+        width: 70px;
+    }
+
+    .capt-health-module .right-icon-img {
+        right: -11%;
+        bottom: -20%;
+        width: 120px;
+    }
+
+    .basic-module .left-icon-img {
+        left: -5%;
+        top: -1%;
+    }
+
+    .basic-module .right-icon-img {
+        right: -11%;
+        bottom: -19%;
+        width: 90px;
+    }
+
+    .general-module .left-icon-img,
+    .express-module .left-icon-img {
+        top: -5%;
+        left: -9%;
+    }
+
+    .basic-module ul {
+        padding-right: 1.5rem;
+    }
+
+    .mobile {
+        display: block;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+
+    .form_section {
+        background-image: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .plus-pkg-section::before,
+    .plus-pkg-section::after,
+    .gym-pkg-section::before,
+    .gym-pkg-section::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    .banner-img {
+        margin-bottom: 1.5rem;
+    }
+
+    .form_section {
+        background-image: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .price-btn,
+    .price-btn.book-now-btn {
+        padding: 1rem 1.5rem;
+        min-height: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .page-banner-section {
+        padding: 1.5rem 0;
+        background-size: cover;
+    }
+
+    .banner-text {
+        padding-left: 4rem;
+    }
+
+    .banner-text h3 {
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+        padding: 10px 0;
+        line-height: 1.5;
+    }
+
+    .get_touch {
+        padding: 0 30px;
+    }
+
+    .test-list {
+        padding: 2rem 2.5rem;
+    }
+
+    .capt-health-module .left-icon-img {
+        left: -10%;
+        top: -5%;
+    }
+
+    .capt-health-module .right-icon-img {
+        right: -21%;
+        width: 150px;
+    }
+
+    .basic-module .right-icon-img {
+        right: -13%;
+        width: 110px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1025px) {
+    .banner-text h3 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+        padding: 15px 0 18px;
+        line-height: 1.5;
+    }
+
+    .get_touch {
+        font-size: 14px;
+    }
+
+    .page-heading {
+        font-size: 25px;
+        line-height: 1.6rem;
+    }
+
+    .price-btn {
+        text-align: center;
+    }
+
+    .price-btn label {
+        font-size: 14px;
+    }
+
+    .price-btn span {
+        font-size: 20px;
+    }
+}

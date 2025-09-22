@@ -1,0 +1,91 @@
+/* ====================    Right Section Start     ==================== */
+
+/* ====================    Global Start     ==================== */
+
+.page_heading {
+    font-size: 32px;
+    font-weight: 700 !important;
+}
+
+.section_heading {
+    font-size: 28px;
+}
+
+.purple_text {
+    color: #5C2D91;
+}
+
+.purple_bg {
+    background-color: #5C2D91;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.bolder {
+    font-weight: 800 !important;
+}
+
+.text_white {
+    color: #fff;
+}
+
+.yellow_bg {
+    background-color: #F7941D;
+}
+
+.yellow_text {
+    color: #F7941D;
+}
+
+.light_pink_bg {
+    background-color: #FFF5EA;
+}
+
+.light_purple_bg {
+    background-color: #fffaf5;
+}
+
+.how_it_work_module img {
+    height: 200px;
+}
+
+.how_it_work_module span {
+    color: #4C4B4B;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    list-style: normal;
+    display: block;
+}
+
+/* ====================   Responsive UI Details Section Start     ==================== */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .how_it_work_module img {
+        height: 120px;
+    }
+    /* ====================    Right Section Close     ==================== */
+}
+
+@media screen and (max-width: 767px) and (min-width: 601px) {
+    .how_it_work_module img {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 481px) {
+    .how_it_work_module img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .how_it_work_module img {
+        height: auto;
+    }
+}
+
+/* ====================   Responsive UI Details Section Close     ==================== */
