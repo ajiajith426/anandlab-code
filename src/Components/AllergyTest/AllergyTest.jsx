@@ -49,21 +49,21 @@ export default function AllergyTesting() {
   const gtmScript3 = document.createElement("script");
   gtmScript3.innerHTML = `
       gtag('config', 'AW-10841898141/8FEGCJn-otAZEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
   const gtmScript5 = document.createElement("script");
   gtmScript5.innerHTML = `
       gtag('config', 'AW-10841898141/GDwECMeVpv0YEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
   const gtmScript8 = document.createElement("script");
   gtmScript8.innerHTML = `
        gtag('config', 'AW-10841898141/QgvjCPu13tMZEJ356LEo', {
-    'phone_conversion_number': '+918035287579'
+    'phone_conversion_number': '+917823946731'
       });
   `;
 
@@ -255,7 +255,7 @@ export default function AllergyTesting() {
           <span className="book-our-heading">BOOK HOME COLLECTION FOR </span>
           <span className="health-check-heading">&nbsp;ALLERGY TESTS</span>
           <div class="contact-number-container-home mb-5 mt-3 w-25 mx-auto">
-            <a href="tel:+918035287579" class="call-icon-home shadow-lg"> <i class="fa fa-phone"></i>+91 +918035287579</a>
+            <a href="tel:+917823946731" class="call-icon-home shadow-lg"> <i class="fa fa-phone"></i>+91 +917823946731</a>
           </div>
         </div>
 

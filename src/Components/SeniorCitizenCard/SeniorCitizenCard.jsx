@@ -53,21 +53,21 @@ export default function SeniorCitizenCard() {
     const gtmScript3 = document.createElement("script");
     gtmScript3.innerHTML = `
       gtag('config', 'AW-10841898141/8FEGCJn-otAZEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
     const gtmScript5 = document.createElement("script");
     gtmScript5.innerHTML = `
       gtag('config', 'AW-10841898141/GDwECMeVpv0YEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
     const gtmScript8 = document.createElement("script");
     gtmScript8.innerHTML = `
        gtag('config', 'AW-10841898141/QgvjCPu13tMZEJ356LEo', {
-    'phone_conversion_number': '+918035287579'
+    'phone_conversion_number': '+917823946731'
       });
   `;
 
@@ -334,7 +334,7 @@ export default function SeniorCitizenCard() {
 
                     <div className="col-12 mt-4">
                         <div className="col-lg-4 col-md-7 m-auto">
-                            <a href={`tel:+918035287579 `} className='sent_enquiry call-btn m-auto'> CALL US
+                            <a href={`tel:+917823946731 `} className='sent_enquiry call-btn m-auto'> CALL US
                                 <i className="fa fa-phone"></i>
                                 +91 8035 28 7579</a>
                         </div>

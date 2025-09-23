@@ -111,7 +111,7 @@ export default function FriendshipDay() {
   const gtmScript3 = document.createElement('script');
   gtmScript3.innerHTML = `
       gtag('config', 'AW-10841898141/8FEGCJn-otAZEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
     `;
 
@@ -143,7 +143,7 @@ export default function FriendshipDay() {
               <p className="my-3">This Friendship’s Day, strengthen your bonds with a commitment to health & well-being </p>
 
               <div className={`${[css['banner-links']]} pb-3`}>
-                <a href={`tel:+918035287579 `} className={` ${css.sent_enquiry} ${css['w-auto']} m-auto`}><i className="fa fa-phone"></i> +918035287579 </a>
+                <a href={`tel:+917823946731 `} className={` ${css.sent_enquiry} ${css['w-auto']} m-auto`}><i className="fa fa-phone"></i> +917823946731 </a>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function FriendshipDay() {
           </div>
           <div className="col-sm-5 p-0">
             {/* <div className="contact-number-container-home">
-                  <a href="tel:+918035287579 " className="call-icon-home shadow-lg"> <i className="fa fa-phone"></i>+918035287579 </a>
+                  <a href="tel:+917823946731 " className="call-icon-home shadow-lg"> <i className="fa fa-phone"></i>+917823946731 </a>
                 </div> */}
             <div className={`${css.form_module}`}>
               <form onSubmit={handleSubmit(contactUsFrom)}>

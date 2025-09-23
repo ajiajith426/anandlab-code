@@ -304,7 +304,7 @@ export default function AnandatHome() {
               </div>
               <div className="col-sm-12 col-md-12 col-lg-5 mb-5">
                 <div className="contact-number-container-home">
-                  <a href="tel:+917823946731 " className="call-icon-home shadow-lg"> <i className="fa fa-phone"></i>+917823946731 </a>
+                  <a href="tel:+917823946731 " className="call-icon-home shadow-lg"> <i className="fa fa-phone"></i>+91 7823946731 </a>
                 </div>
                 <div className="green-bg ps-rel franc-isemed animated fadeInRight">
                   <h4 className="mb-3 text-center text-white">Enquire Now</h4>

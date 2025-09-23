@@ -47,21 +47,21 @@ function IndependenceDay() {
     const gtmScript3 = document.createElement("script");
     gtmScript3.innerHTML = `
       gtag('config', 'AW-10841898141/8FEGCJn-otAZEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
     const gtmScript5 = document.createElement("script");
     gtmScript5.innerHTML = `
       gtag('config', 'AW-10841898141/GDwECMeVpv0YEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
     const gtmScript8 = document.createElement("script");
     gtmScript8.innerHTML = `
        gtag('config', 'AW-10841898141/QgvjCPu13tMZEJ356LEo', {
-    'phone_conversion_number': '+918035287579'
+    'phone_conversion_number': '+917823946731'
       });
   `;
 
@@ -197,7 +197,7 @@ function IndependenceDay() {
                         <p className={`${[css['page-content']]} text-center`}>Celebrate Independence Day by prioritizing your health with Neuberg Anand’s exclusive offer. Embrace the freedom to take control of your well-being and make preventive health a priority. </p>
                         <div className="row">
                             <div className="col-md-4 m-auto">
-                                <a href={`tel:+918035287579 `} className={` ${css.sent_enquiry} m-auto`}><i className="fa fa-phone"></i>+91 8035 28 7579</a>
+                                <a href={`tel:+917823946731 `} className={` ${css.sent_enquiry} m-auto`}><i className="fa fa-phone"></i>+91 8035 28 7579</a>
                             </div>
                         </div>
                     </div>

@@ -104,7 +104,7 @@ export default function PackagesAds() {
   const gtmScript3 = document.createElement('script');
   gtmScript3.innerHTML = `
       gtag('config', 'AW-10841898141/8FEGCJn-otAZEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
     `;
 
@@ -112,14 +112,14 @@ export default function PackagesAds() {
   const gtmScript5 = document.createElement("script");
   gtmScript5.innerHTML = `
       gtag('config', 'AW-10841898141/GDwECMeVpv0YEJ356LEo', {
-        'phone_conversion_number': '+918035287579'
+        'phone_conversion_number': '+917823946731'
       });
   `;
 
   const gtmScript8 = document.createElement("script");
   gtmScript8.innerHTML = `
        gtag('config', 'AW-10841898141/QgvjCPu13tMZEJ356LEo', {
-    'phone_conversion_number': '+918035287579'
+    'phone_conversion_number': '+917823946731'
       });
   `;
 
