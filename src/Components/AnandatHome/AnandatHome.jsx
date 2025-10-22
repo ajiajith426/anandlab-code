@@ -24,12 +24,18 @@ import how_work2 from '../../assets/images/landing_pages/Schedule-the-test.png';
 import how_work3 from '../../assets/images/landing_pages/visit-your-home-1.png';
 import how_work4 from '../../assets/images/landing_pages/visit-your-home.png';
 import how_work5 from '../../assets/images/landing_pages/Get-your-reports.png';
+import toast from "react-hot-toast";
+import { displayApiError } from "../../utils";
 
 export default function AnandatHome() {
   const [open, setOpen] = useState(true)
   const [Loading, setLoading] = useState(false)
   const navigate = useNavigate();
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const [verifyEnable,setVerifyEnable] = useState(false)
+
+  const [formEnable,setFormEnable] = useState(true)
+
 
   const handleRecaptchaChange = (value) => {
     setRecaptchaValue(value);
@@ -54,16 +60,65 @@ export default function AnandatHome() {
   const notesDataString = JSON.stringify(notesValue);
   // console.log(notesDataString);
 
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const validEmailCheck  = (email) =>{
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+  }
+
+  const validMobileCheck  = (mobile) =>{
+    const pattern = /^[6-9]\d{9}$/;
+    return pattern.test(mobile);
+  }
+
+  const { register, handleSubmit,watch, formState: { errors }, reset } = useForm({
     resolver: yupResolver(
       Yup.object().shape({
         name: Yup.string().required(),
         mobile: Yup.string().matches(/^[6-9]\d{9}$/).required(),
         email: Yup.string().required(),
+        otp: Yup.string().required(),
         // message: Yup.string().required()
       })
     )
   })
+
+  const sendOTPEnable = watch('name') && validEmailCheck(watch('email')) && validMobileCheck(watch('mobile'));
+
+  const sendOTP = async () =>{
+    const formData = {
+      name:watch('name'),
+      email:watch('email'),
+      mobile:watch('mobile'),
+      // page_action:"send_otp"
+    }
+    try{
+     const res = await axios.post(API_URL.SEND_OTP,formData,{
+      withCredentials: true
+     });
+      setVerifyEnable(true);
+      toast.success(res?.data?.Message)
+    } catch (error) {
+      displayApiError(error?.response?.data)
+    }
+  }
+
+  const verifyOTP = async () =>{
+    const formData = {
+      name:watch('name'),
+      email:watch('email'),
+      // page_action:"verify_otp",
+      mobile:watch('mobile'),
+      otp:watch('otp')
+    }
+    try{
+      const res = await axios.post(API_URL.VERIFY_OTP,formData);
+      setFormEnable(false)
+       toast.success(res?.data?.Message)
+     } catch (error) {
+       displayApiError(error?.response?.data)
+     }
+  }
+
   const contactUsFrom = (data) => {
     // Calculate current date/time minus 5:30 hours
     const now = new Date();
@@ -202,6 +257,7 @@ export default function AnandatHome() {
       alert('Please check reCAPTCHA');
     }
   }
+  
   useEffect(() => {
     document.title = "Book A Home Collection | Neuberg Anand";
     window.scroll(0, 0);
@@ -257,7 +313,6 @@ export default function AnandatHome() {
       });
   `;
 
-
   // Append the script tags to the head of the document
   document.head.appendChild(gtmScript1);
   document.head.appendChild(gtmScript2);
@@ -311,16 +366,41 @@ export default function AnandatHome() {
                   <form onSubmit={handleSubmit(contactUsFrom)}>
                     <div className="formdata">
                       {errors?.name ? <small className='text-danger'>{errors?.name?.message}</small> : ''}
-                      <input {...register('name')} type="text" placeholder="Enter Your Name" className='form-control' />
-                    </div>
-                    <div className="formdata">
-                      {errors?.mobile ? <small className='text-danger'>{'Mobile is a invalid field'}</small> : ''}
-                      <input {...register('mobile')} type="tel" placeholder="Enter Your Mobile Number" className='form-control' />
+                      <input {...register('name')} type="text" placeholder="Enter Your Name" className='form-control' disabled={verifyEnable} />
                     </div>
                     <div className="formdata">
                       {errors?.email ? <small className='text-danger'>{'Email is a invalid field'}</small> : ''}
-                      <input {...register('email')} type="email" placeholder="Enter Your Email" className='form-control' />
+                      <input {...register('email')} type="email" placeholder="Enter Your Email" className='form-control' disabled={verifyEnable} />
                     </div>
+                    <div className="formdata">
+                      {errors?.mobile ? <small className='text-danger'>{'Mobile is a invalid field'}</small> : ''}
+                      <div class="form-send-otp">
+                        <input {...register('mobile')} type="tel" placeholder="Enter Your Mobile Number" className='form-control'disabled={!formEnable} />
+                        <button class="send-otp" id="send-otp" type="button" onClick={()=> sendOTP()} 
+                          disabled={!sendOTPEnable || !formEnable}
+                          >
+                          Send OTP
+                        </button>
+                      </div>
+                    </div> 
+
+                    {verifyEnable &&
+                      <div className="formdata">
+                        {errors?.otp ? <small className='text-danger'>{'Verify OTP is a invalid field'}</small> : ''}
+                        <div class="form-send-otp">
+                          <input {...register('otp')} type="tel" placeholder="Verify OTP" className='form-control' />
+                          <button class="send-otp" id="send-otp" type="button" onClick={()=>{verifyOTP()}} 
+                            disabled={!formEnable}
+                            >Verify OTP</button>
+                        </div>
+                      </div> 
+                    }
+
+                    {/* <div className="formdata">
+                      {errors?.mobile ? <small className='text-danger'>{'Mobile is a invalid field'}</small> : ''}
+                      <input {...register('mobile')} type="tel" placeholder="Enter Your Mobile Number" className='form-control' />
+                    </div> */}
+                    
                     <h6 className="text-light">
                       {/* Please enter your details and we will reach out to you as soon as we can. */}
                     </h6>
@@ -352,7 +432,7 @@ export default function AnandatHome() {
                             Loading ...
                           </button>
                           :
-                          <button type="submit" className="btn-primary btn-flx-full">
+                          <button type="submit" className="btn-primary btn-flx-full" disabled={formEnable}>
                             Submit
                           </button>
                       }

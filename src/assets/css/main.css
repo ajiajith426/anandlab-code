@@ -10569,3 +10569,32 @@ img.line-image {
 
 
 /* Sayali CSS */
+
+/* Otp section design */
+
+.form-send-otp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.form-send-otp input{
+  margin-bottom: 0px !important;
+}
+
+.send-otp{
+  width:35%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e1e1e;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.form-send-otp input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
